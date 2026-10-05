@@ -1,0 +1,17 @@
+{
+  "name": "@elucenia/tool-pubmed-clinical-queries",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Isolated ELUCENIA per-tool source candidate; synthetic evidence, not clinical approval",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "test": "node test.cjs",
+    "search": "node cli.cjs"
+  },
+  "dependencies": {
+    "htmlparser2": "12.0.0"
+  }
+}

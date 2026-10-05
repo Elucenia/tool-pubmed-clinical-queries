@@ -1,0 +1,285 @@
+{
+  "at": "2026-10-05T17:11:18.419Z",
+  "scope": "PubMed clinical-study-category internal interface candidate; no application wiring/build, physicianapproval, professionallanguageapproval or fullpubmedserviceparity claim",
+  "expectedSource": "NLM2011clinical-study-categoryqueries; deterministic mockPMIDs1001/1002; live counts are time-dependent transport observations, not fixed clinical expectations",
+  "summary": {
+    "checked": 64,
+    "failed": 0,
+    "liveVariants": 0
+  },
+  "rows": [
+    {
+      "name": "exact diagnosis narrow source strategy",
+      "status": "passed"
+    },
+    {
+      "name": "fixed therapy narrow source strategy",
+      "status": "passed"
+    },
+    {
+      "name": "therapy/broad single enveloped strategy",
+      "status": "passed"
+    },
+    {
+      "name": "therapy/narrow single enveloped strategy",
+      "status": "passed"
+    },
+    {
+      "name": "diagnosis/broad single enveloped strategy",
+      "status": "passed"
+    },
+    {
+      "name": "diagnosis/narrow single enveloped strategy",
+      "status": "passed"
+    },
+    {
+      "name": "etiology/broad single enveloped strategy",
+      "status": "passed"
+    },
+    {
+      "name": "etiology/narrow single enveloped strategy",
+      "status": "passed"
+    },
+    {
+      "name": "prognosis/broad single enveloped strategy",
+      "status": "passed"
+    },
+    {
+      "name": "prognosis/narrow single enveloped strategy",
+      "status": "passed"
+    },
+    {
+      "name": "prediction/broad single enveloped strategy",
+      "status": "passed"
+    },
+    {
+      "name": "prediction/narrow single enveloped strategy",
+      "status": "passed"
+    },
+    {
+      "name": "reject missing",
+      "status": "passed"
+    },
+    {
+      "name": "reject unknown",
+      "status": "passed"
+    },
+    {
+      "name": "reject empty",
+      "status": "passed"
+    },
+    {
+      "name": "reject tooLong",
+      "status": "passed"
+    },
+    {
+      "name": "reject control",
+      "status": "passed"
+    },
+    {
+      "name": "reject history",
+      "status": "passed"
+    },
+    {
+      "name": "reject parenthesis",
+      "status": "passed"
+    },
+    {
+      "name": "reject quotes",
+      "status": "passed"
+    },
+    {
+      "name": "reject category",
+      "status": "passed"
+    },
+    {
+      "name": "reject scope",
+      "status": "passed"
+    },
+    {
+      "name": "reject pageFloat",
+      "status": "passed"
+    },
+    {
+      "name": "reject pageNegative",
+      "status": "passed"
+    },
+    {
+      "name": "reject pageTooBig",
+      "status": "passed"
+    },
+    {
+      "name": "reject pageString",
+      "status": "passed"
+    },
+    {
+      "name": "Unicode scientific terms retained",
+      "status": "passed"
+    },
+    {
+      "name": "balanced Boolean query retained",
+      "status": "passed"
+    },
+    {
+      "name": "neutral metadata output order and HTML entity decoding",
+      "status": "passed"
+    },
+    {
+      "name": "reject missing PMID from summary",
+      "status": "passed"
+    },
+    {
+      "name": "reject mismatched summary UID",
+      "status": "passed"
+    },
+    {
+      "name": "reject duplicate PMID in search",
+      "status": "passed"
+    },
+    {
+      "name": "reject page cursor mismatch",
+      "status": "passed"
+    },
+    {
+      "name": "upstream syntax error is actionable422",
+      "status": "passed"
+    },
+    {
+      "name": "mock internal search returns cited metadata withoutabstracts",
+      "status": "passed"
+    },
+    {
+      "name": "only two fixed authorized upstream endpoints",
+      "status": "passed"
+    },
+    {
+      "name": "empty search returns internally without summary fetch",
+      "status": "passed"
+    },
+    {
+      "name": "HTTPGET rejected405",
+      "status": "passed"
+    },
+    {
+      "name": "HTTPPUT rejected405",
+      "status": "passed"
+    },
+    {
+      "name": "HTTPHEAD rejected405",
+      "status": "passed"
+    },
+    {
+      "name": "HTTPPATCH rejected405",
+      "status": "passed"
+    },
+    {
+      "name": "HTTPDELETE rejected405",
+      "status": "passed"
+    },
+    {
+      "name": "HTTPOPTIONS rejected405",
+      "status": "passed"
+    },
+    {
+      "name": "foreign Origin rejected403",
+      "status": "passed"
+    },
+    {
+      "name": "cross site rejected403",
+      "status": "passed"
+    },
+    {
+      "name": "wrong contenttype rejected415",
+      "status": "passed"
+    },
+    {
+      "name": "bad JSON rejected400",
+      "status": "passed"
+    },
+    {
+      "name": "actual body size rejected413 withouttrustedlength",
+      "status": "passed"
+    },
+    {
+      "name": "unconfigured contact rejected503 without network",
+      "status": "passed"
+    },
+    {
+      "name": "upstream rate limit preserved429",
+      "status": "passed"
+    },
+    {
+      "name": "network error controlled502",
+      "status": "passed"
+    },
+    {
+      "name": "malformed metadata controlled502",
+      "status": "passed"
+    },
+    {
+      "name": "request burst limited30 perminute",
+      "status": "passed"
+    },
+    {
+      "name": "400ms upstreamspacing gate",
+      "status": "passed"
+    },
+    {
+      "name": "complete authoredcopy pt-BR",
+      "status": "passed"
+    },
+    {
+      "name": "complete authoredcopy en",
+      "status": "passed"
+    },
+    {
+      "name": "complete authoredcopy es",
+      "status": "passed"
+    },
+    {
+      "name": "complete authoredcopy fr",
+      "status": "passed"
+    },
+    {
+      "name": "complete authoredcopy de",
+      "status": "passed"
+    },
+    {
+      "name": "complete authoredcopy it",
+      "status": "passed"
+    },
+    {
+      "name": "complete authoredcopy ar",
+      "status": "passed"
+    },
+    {
+      "name": "complete authoredcopy zh",
+      "status": "passed"
+    },
+    {
+      "name": "complete authoredcopy ja",
+      "status": "passed"
+    },
+    {
+      "name": "complete authoredcopy hi",
+      "status": "passed"
+    }
+  ],
+  "bindings": [
+    {
+      "file": "pubmed-clinical-queries.cjs",
+      "bytes": 14231,
+      "sha256": "7af370156f06ad7ca85a7c2c21be0cfa524177c08e3711d70bc979026fdc5d41"
+    },
+    {
+      "file": "interface-copy.cjs",
+      "bytes": 17078,
+      "sha256": "5f923a60fe4f4cd9ae0f47043bb5b4dbc0020ddc8b8cb22cc288a51233e81731"
+    }
+  ],
+  "live": [],
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "sourceRightsScope": "NLM original strategies credited; live bibliographic metadata under NLM data conditions; noabstract/fullarticle copied",
+  "networkAttempted": false
+}

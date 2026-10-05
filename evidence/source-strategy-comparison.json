@@ -1,0 +1,102 @@
+{
+  "schema": "elucenia-nlm-full-strategy-source-review-v44",
+  "at": "2026-10-05T11:48:08.953Z",
+  "inputs": [
+    {
+      "file": "apps/website/src/lib/pubmed-clinical-queries.cjs",
+      "sha256": "699b2d3e16cb7bda45d3a7568e5646b38d2fb6f1e6b483f7d0bcf0e546c37416"
+    },
+    {
+      "file": "reports/review-20261003/pubmed-primary-strategies-final44.json",
+      "sha256": "6142a34082c2dc4512e371d25a21ce88834b17b549f5be53f898c6e844f30435"
+    }
+  ],
+  "methodEdition": "NLM Clinical Study Categories, revised December 2011",
+  "summary": {
+    "fullSourceStrategies": 10,
+    "exactMatches": 10,
+    "failed": 0
+  },
+  "rows": [
+    {
+      "category": "therapy",
+      "scope": "broad",
+      "expectedNLMStrategy": "((clinical[Title/Abstract] AND trial[Title/Abstract]) OR clinical trials as topic[MeSH Terms] OR clinical trial[Publication Type] OR random*[Title/Abstract] OR random allocation[MeSH Terms] OR therapeutic use[MeSH Subheading])",
+      "obtainedApplicationLiteral": "((clinical[Title/Abstract] AND trial[Title/Abstract]) OR clinical trials as topic[MeSH Terms] OR clinical trial[Publication Type] OR random*[Title/Abstract] OR random allocation[MeSH Terms] OR therapeutic use[MeSH Subheading])",
+      "exact": true
+    },
+    {
+      "category": "therapy",
+      "scope": "narrow",
+      "expectedNLMStrategy": "(randomized controlled trial[Publication Type] OR (randomized[Title/Abstract] AND controlled[Title/Abstract] AND trial[Title/Abstract]))",
+      "obtainedApplicationLiteral": "(randomized controlled trial[Publication Type] OR (randomized[Title/Abstract] AND controlled[Title/Abstract] AND trial[Title/Abstract]))",
+      "exact": true
+    },
+    {
+      "category": "diagnosis",
+      "scope": "broad",
+      "expectedNLMStrategy": "(sensitiv*[Title/Abstract] OR sensitivity and specificity[MeSH Terms] OR diagnose[Title/Abstract] OR diagnosed[Title/Abstract] OR diagnoses[Title/Abstract] OR diagnosing[Title/Abstract] OR diagnosis[Title/Abstract] OR diagnostic[Title/Abstract] OR diagnosis[MeSH:noexp] OR (diagnostic equipment[MeSH:noexp] OR diagnostic errors[MeSH:noexp] OR diagnostic imaging[MeSH:noexp] OR diagnostic services[MeSH:noexp]) OR diagnosis, differential[MeSH:noexp] OR diagnosis[Subheading:noexp])",
+      "obtainedApplicationLiteral": "(sensitiv*[Title/Abstract] OR sensitivity and specificity[MeSH Terms] OR diagnose[Title/Abstract] OR diagnosed[Title/Abstract] OR diagnoses[Title/Abstract] OR diagnosing[Title/Abstract] OR diagnosis[Title/Abstract] OR diagnostic[Title/Abstract] OR diagnosis[MeSH:noexp] OR (diagnostic equipment[MeSH:noexp] OR diagnostic errors[MeSH:noexp] OR diagnostic imaging[MeSH:noexp] OR diagnostic services[MeSH:noexp]) OR diagnosis, differential[MeSH:noexp] OR diagnosis[Subheading:noexp])",
+      "exact": true
+    },
+    {
+      "category": "diagnosis",
+      "scope": "narrow",
+      "expectedNLMStrategy": "(specificity[Title/Abstract])",
+      "obtainedApplicationLiteral": "(specificity[Title/Abstract])",
+      "exact": true
+    },
+    {
+      "category": "etiology",
+      "scope": "broad",
+      "expectedNLMStrategy": "(risk*[Title/Abstract] OR risk*[MeSH:noexp] OR (risk adjustment[MeSH:noexp] OR risk assessment[MeSH:noexp] OR risk factors[MeSH:noexp] OR risk management[MeSH:noexp] OR risk taking[MeSH:noexp]) OR cohort studies[MeSH Terms] OR group[Text Word] OR groups[Text Word] OR grouped [Text Word])",
+      "obtainedApplicationLiteral": "(risk*[Title/Abstract] OR risk*[MeSH:noexp] OR (risk adjustment[MeSH:noexp] OR risk assessment[MeSH:noexp] OR risk factors[MeSH:noexp] OR risk management[MeSH:noexp] OR risk taking[MeSH:noexp]) OR cohort studies[MeSH Terms] OR group[Text Word] OR groups[Text Word] OR grouped [Text Word])",
+      "exact": true
+    },
+    {
+      "category": "etiology",
+      "scope": "narrow",
+      "expectedNLMStrategy": "((relative[Title/Abstract] AND risk*[Title/Abstract]) OR (relative risk[Text Word]) OR risks[Text Word] OR cohort studies[MeSH:noexp] OR (cohort[Title/Abstract] AND study[Title/Abstract]) OR (cohort[Title/Abstract] AND studies[Title/Abstract]))",
+      "obtainedApplicationLiteral": "((relative[Title/Abstract] AND risk*[Title/Abstract]) OR (relative risk[Text Word]) OR risks[Text Word] OR cohort studies[MeSH:noexp] OR (cohort[Title/Abstract] AND study[Title/Abstract]) OR (cohort[Title/Abstract] AND studies[Title/Abstract]))",
+      "exact": true
+    },
+    {
+      "category": "prognosis",
+      "scope": "broad",
+      "expectedNLMStrategy": "(incidence[MeSH:noexp] OR mortality[MeSH Terms] OR follow up studies[MeSH:noexp] OR prognos*[Text Word] OR predict*[Text Word] OR course*[Text Word])",
+      "obtainedApplicationLiteral": "(incidence[MeSH:noexp] OR mortality[MeSH Terms] OR follow up studies[MeSH:noexp] OR prognos*[Text Word] OR predict*[Text Word] OR course*[Text Word])",
+      "exact": true
+    },
+    {
+      "category": "prognosis",
+      "scope": "narrow",
+      "expectedNLMStrategy": "(prognos*[Title/Abstract] OR (first[Title/Abstract] AND episode[Title/Abstract]) OR cohort[Title/Abstract])",
+      "obtainedApplicationLiteral": "(prognos*[Title/Abstract] OR (first[Title/Abstract] AND episode[Title/Abstract]) OR cohort[Title/Abstract])",
+      "exact": true
+    },
+    {
+      "category": "prediction",
+      "scope": "broad",
+      "expectedNLMStrategy": "(predict*[Title/Abstract] OR predictive value of tests[MeSH Terms] OR score[Title/Abstract] OR scores[Title/Abstract] OR scoring system[Title/Abstract] OR scoring systems[Title/Abstract] OR observ*[Title/Abstract] OR observer variation[MeSH Terms])",
+      "obtainedApplicationLiteral": "(predict*[Title/Abstract] OR predictive value of tests[MeSH Terms] OR score[Title/Abstract] OR scores[Title/Abstract] OR scoring system[Title/Abstract] OR scoring systems[Title/Abstract] OR observ*[Title/Abstract] OR observer variation[MeSH Terms])",
+      "exact": true
+    },
+    {
+      "category": "prediction",
+      "scope": "narrow",
+      "expectedNLMStrategy": "(validation[Title/Abstract] OR validate[Title/Abstract])",
+      "obtainedApplicationLiteral": "(validation[Title/Abstract] OR validate[Title/Abstract])",
+      "exact": true
+    }
+  ],
+  "scope": {
+    "applicationImports": 0,
+    "adapterCalls": 0,
+    "HTTPRequests": 0,
+    "independentOfApplicationAuthor": true,
+    "expectedSource": "Official NLM table read independently and transcribed into pinned primary expectation; not generated from application FILTERS",
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "claim": "Exact Boolean strategy and method-edition correspondence only; actual served transport separately tested"
+  }
+}
